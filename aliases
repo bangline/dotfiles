@@ -1,0 +1,15 @@
+# Utility aliases
+alias zshrc="vim ~/.zshrc"
+alias vimrc="vim ~/.vimrc"
+alias gitconfig="vim ~/.gitconfig"
+
+alias dotfiles="vim ~/.dotfiles ."
+alias aliases="vim ~/.dotfiles/aliases"
+alias functions="vim ~/.dotfiles/functions"
+alias gitignore="vim ~/.dotfiles/globalgitignore"
+alias vim="mvim -v"
+alias vundle="vim +BundleInstall +qall"
+
+chpwd() {
+  ls -lrthG
+}

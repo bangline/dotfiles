@@ -1,0 +1,16 @@
+[user]
+  name = Dave Kennedy
+  email = david@bangline.co.uk
+[color]
+  ui = true
+[alias]
+  co = checkout
+  c = commit -am
+  st = status -s
+  br = branch
+  bra = branch -a
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  standup = log --since yesterday --oneline --author bangline
+[core]
+  excludesfile = ~/.dotfiles/globalgitignore
+  editor = vim
