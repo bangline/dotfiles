@@ -34,3 +34,5 @@ let mapleader = ","
 
 " format the entire file
 nmap <leader>fef ggVG=`` 
+nmap <leader>, :e.<CR>
+nmap <leader>b :b#<CR>
