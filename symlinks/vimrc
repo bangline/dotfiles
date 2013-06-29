@@ -15,6 +15,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-surround'
+Bundle 'nono/vim-handlebars'
 
 " ================
 " Ruby stuff
@@ -32,6 +33,7 @@ augroup END
 
 let mapleader = ","
 set nocompatible
+set list
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set history=500" keep 500 lines of command line history
 set ruler" show the cursor position all the time
@@ -39,8 +41,32 @@ set showcmd" display incomplete commands
 set autoindent
 set showmatch
 set nowrap
+set expandtab
+set smarttab
+set tabstop=2
+set shiftwidth=2
+set autoread
+
+" List chars
+set listchars=""
+set listchars=tab:\ \
+set listchars+=trail:.
+set listchars+=extends:>
+set listchars+=precedes:<
 
 nmap <leader>fef ggVG=`` 
 nmap <leader>, :e.<CR>
 nmap <leader>b :b#<CR>
 nmap <F5> :so $MYVIMRC<CR>
+
+vmap <D-]> >gv
+vmap <D-[> <gv
+
+nmap <A-]> >>
+nmap <A-[> <<
+
+omap <D-]> >>
+omap <D-[> <<
+
+imap <D-]> <Esc>>>i
+imap <D-[> <Esc><<i
