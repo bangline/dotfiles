@@ -13,6 +13,7 @@ HISTFILE=~/.zsh_history
 SAVEHIST=20000
 
 plugins=(git bundler)
+source /usr/local/Cellar/todo-txt/2.9/etc/bash_completion.d/todo_completion complete -F _todo t
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.dotfiles/aliases

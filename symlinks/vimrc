@@ -16,6 +16,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-surround'
 Bundle 'nono/vim-handlebars'
+Bundle 'elixir-lang/vim-elixir'
 
 " ================
 " Ruby stuff
