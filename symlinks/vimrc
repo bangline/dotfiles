@@ -56,6 +56,8 @@ set listchars+=precedes:<
 
 " format the current file
 nmap <leader>fef ggVG=`` 
+" equally resize splits
+nmap <leader>= <C-w>=
 
 " Qucikly show navigation at the root
 nmap <leader>, :e.<CR>
