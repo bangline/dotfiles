@@ -63,6 +63,8 @@ nmap <leader>, :e.<CR>
 nmap <leader>b :b#<CR>
 " Reload the vimrc config
 nmap <F5> :so $MYVIMRC<CR>
+" Resize equally
+nmap <leader>= <C-w>=
 
 " Indentation helpers
 vmap <D-]> >gv
