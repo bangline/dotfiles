@@ -1,3 +1,4 @@
+export TODO_ACTIONS_DIR="$HOME/.dotfiles/extensions/todo.txt"
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 
