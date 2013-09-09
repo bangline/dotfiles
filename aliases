@@ -16,3 +16,6 @@ chpwd() {
 
 alias t='/usr/local/Cellar/todo-txt/2.9/bin/todo.sh -d $HOME/Dropbox/todo/todo.cfg'
 alias b='bundle exec'
+
+# ZSH Preventing Autocorrects
+alias go="nocorrect go"
