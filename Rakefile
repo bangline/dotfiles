@@ -5,7 +5,7 @@ desc "Install the dotfiles"
 task :install do
   puts "Creating dotfile symlinks..."
   Dir.glob('symlinks/*') do |file|
-  	target = File.join(ENV['HOME'], ".#{filename(file)}")
+    target = File.join(ENV['HOME'], ".#{filename(file)}")
     if File.exist?(target)
       archive_dir = File.join(ENV['HOME'], '.dotfiles_old')
       FileUtils.mkdir(archive_dir) unless Dir.exist?(archive_dir)

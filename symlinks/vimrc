@@ -48,6 +48,7 @@ set smarttab
 set tabstop=2
 set shiftwidth=2
 set autoread
+set hlsearch
 
 " List chars show whitespace and do not wrap lines
 set listchars=""
@@ -65,6 +66,10 @@ nmap <leader>= <C-w>=
 nmap <leader>, :e.<CR>
 " Back to the last buffer
 nmap <leader>b :b#<CR>
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bprevious<CR>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nmap <leader>l :ls<CR>
 " Reload the vimrc config
 nmap <F5> :so $MYVIMRC<CR>
 " Resize equally
