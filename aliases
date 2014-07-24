@@ -16,8 +16,9 @@ chpwd() {
 
 alias t='/usr/local/Cellar/todo-txt/2.9/bin/todo.sh -d $HOME/Dropbox/todo/todo.cfg'
 alias b='bundle exec'
-alias vboxr='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
+alias grunt_init='cp ~/.dotfiles/templates/Gruntfile.js .'
+alias cnm='rm -rf node_modules'
 
 # ZSH Preventing Autocorrects
-alias go="nocorrect go"
+# alias go="nocorrect go"
 alias plugin="nocorrect plugin"

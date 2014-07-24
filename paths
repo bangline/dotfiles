@@ -1,7 +1,11 @@
 export TODO_ACTIONS_DIR="$HOME/.dotfiles/extensions/todo.txt"
+export GOPATH="$HOME/Code/golang"
+
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/usr/sbin:/sbin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+export PATH="./node_modules/.bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
 
 eval "$(rbenv init -)"
 

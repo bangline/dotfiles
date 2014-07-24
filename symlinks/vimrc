@@ -17,6 +17,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
 Bundle 'nono/vim-handlebars'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'rizzatti/dash.vim'
 
 " ================
 " Ruby stuff
@@ -48,7 +49,6 @@ set smarttab
 set tabstop=2
 set shiftwidth=2
 set autoread
-set hlsearch
 
 " List chars show whitespace and do not wrap lines
 set listchars=""
@@ -58,7 +58,7 @@ set listchars+=extends:>
 set listchars+=precedes:<
 
 " format the current file
-nmap <leader>fef ggVG=`` 
+nmap <leader>fef ggVG=``
 " equally resize splits
 nmap <leader>= <C-w>=
 
@@ -66,15 +66,13 @@ nmap <leader>= <C-w>=
 nmap <leader>, :e.<CR>
 " Back to the last buffer
 nmap <leader>b :b#<CR>
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bprevious<CR>
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nmap <leader>l :ls<CR>
 " Reload the vimrc config
 nmap <F5> :so $MYVIMRC<CR>
 " Resize equally
 nmap <leader>= <C-w>=
-nmap <leader>s :Ack 
+nmap <leader>s :Ack
+nmap <leader>r :CtrlPClearCache<CR>
 
 " Indentation helpers
 vmap <D-]> >gv
@@ -90,6 +88,9 @@ imap <D-[> <Esc><<i
 nmap <leader>tn :e notes.scratch.md<CR>
 " Remember to sharpen when possible and applicable
 nmap <leader>ts :e ~/Dropbox/tool_sharpener.md<CR>
+nmap <leader>sl :e ~/Dropbox/solutions_log.md<CR>
 
 " Rspec.vim mappings
 map <Leader>t :! bundle exec rspec<CR>
+" Strip trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
