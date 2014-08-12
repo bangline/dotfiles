@@ -19,6 +19,8 @@ alias b='bundle exec'
 alias grunt_init='cp ~/.dotfiles/templates/Gruntfile.js .'
 alias cnm='rm -rf node_modules'
 
+alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql"
+
 # ZSH Preventing Autocorrects
 # alias go="nocorrect go"
 alias plugin="nocorrect plugin"
