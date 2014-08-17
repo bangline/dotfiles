@@ -7,3 +7,7 @@ function gvl() {
   branch = `get_branch_name`
   git hist origin/$branch..HEAD
 }
+
+function gop() {
+  cd "$GOPATH/src/github.com/bangline/$1"
+}
