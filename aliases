@@ -7,7 +7,7 @@ alias dotfiles="vim ~/.dotfiles ."
 alias aliases="vim ~/.dotfiles/aliases"
 alias functions="vim ~/.dotfiles/functions"
 alias gitignore="vim ~/.dotfiles/globalgitignore"
-alias vim="mvim -v"
+alias vim="vim -v"
 alias vundle="vim +BundleInstall +qall"
 
 chpwd() {
@@ -20,7 +20,7 @@ alias grunt_init='cp ~/.dotfiles/templates/Gruntfile.js .'
 alias cnm='rm -rf node_modules'
 
 alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql"
+alias cpk="pbcopy <"
 
 # ZSH Preventing Autocorrects
-# alias go="nocorrect go"
 alias plugin="nocorrect plugin"

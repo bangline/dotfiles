@@ -65,7 +65,8 @@ nmap <leader>fef ggVG=``
 nmap <leader>= <C-w>=
 
 " Qucikly show navigation at the root
-nmap <leader>, :e.<CR>
+nmap <leader>, :Explore<CR>
+nmap <leader>. :e.<CR>
 " Back to the last buffer
 nmap <leader>b :b#<CR>
 nmap <leader>l :ls<CR>
