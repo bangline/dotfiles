@@ -14,13 +14,7 @@ chpwd() {
   ls -lrthG
 }
 
-alias t='/usr/local/Cellar/todo-txt/2.9/bin/todo.sh -d $HOME/Dropbox/todo/todo.cfg'
-alias b='bundle exec'
-alias grunt_init='cp ~/.dotfiles/templates/Gruntfile.js .'
-alias cnm='rm -rf node_modules'
-
 alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql"
-alias cpk="pbcopy <"
 
 # ZSH Preventing Autocorrects
 alias plugin="nocorrect plugin"

@@ -15,6 +15,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-fugitive'
 Plugin 'nono/vim-handlebars'
 Plugin 'rizzatti/dash.vim'
 Plugin 'fatih/vim-go'
@@ -74,7 +75,9 @@ nmap <leader>l :ls<CR>
 nmap <F5> :so $MYVIMRC<CR>
 " Resize equally
 nmap <leader>= <C-w>=
+" Fast Search
 nmap <leader>s :Ack
+" Reload caches
 nmap <leader>r :CtrlPClearCache<CR>
 
 " Indentation helpers
@@ -89,11 +92,6 @@ imap <D-[> <Esc><<i
 
 " Taking notes are we? Code notes are excluded globally in git
 nmap <leader>tn :e notes.scratch.md<CR>
-" Remember to sharpen when possible and applicable
-nmap <leader>ts :e ~/Dropbox/tool_sharpener.md<CR>
-nmap <leader>sl :e ~/Dropbox/solutions_log.md<CR>
 
-" Rspec.vim mappings
-map <Leader>t :! bundle exec rspec<CR>
 " Strip trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e

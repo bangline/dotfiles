@@ -7,5 +7,4 @@ export PATH="./node_modules/.bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
 eval "$(rbenv init -)"
-
-[[ -s /Users/dave/.nvm/nvm.sh ]] && . /Users/dave/.nvm/nvm.sh
+source ~/.nvm/nvm.sh
