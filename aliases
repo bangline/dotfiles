@@ -10,6 +10,10 @@ alias gitignore="vim ~/.dotfiles/globalgitignore"
 alias vim="vim -v"
 alias vundle="vim +BundleInstall +qall"
 
+# Mail accounts
+alias 1pc="mutt -F ~/.work_muttrc"
+alias bangline="mutt -F ~/.bangline_muttrc"
+
 chpwd() {
   ls -lrthG
 }
