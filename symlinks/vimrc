@@ -62,9 +62,6 @@ set listchars+=precedes:<
 
 " format the current file
 nmap <leader>fef ggVG=``
-" equally resize splits
-nmap <leader>= <C-w>=
-
 " Qucikly show navigation at the root
 nmap <leader>, :Explore<CR>
 nmap <leader>. :e.<CR>
@@ -79,16 +76,8 @@ nmap <leader>= <C-w>=
 nmap <leader>s :Ack
 " Reload caches
 nmap <leader>r :CtrlPClearCache<CR>
-
-" Indentation helpers
-vmap <D-]> >gv
-vmap <D-[> <gv
-nmap <A-]> >>
-nmap <A-[> <<
-omap <D-]> >>
-omap <D-[> <<
-imap <D-]> <Esc>>>i
-imap <D-[> <Esc><<i
+" Pretty json please!
+nmap <leader>j :%!python -m json.tool<CR>
 
 " Taking notes are we? Code notes are excluded globally in git
 nmap <leader>tn :e notes.scratch.md<CR>

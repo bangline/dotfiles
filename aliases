@@ -3,6 +3,8 @@ alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
 alias gitconfig="vim ~/.gitconfig"
 
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
 alias dotfiles="vim ~/.dotfiles ."
 alias aliases="vim ~/.dotfiles/aliases"
 alias functions="vim ~/.dotfiles/functions"
