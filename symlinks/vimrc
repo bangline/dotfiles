@@ -78,7 +78,8 @@ nmap <leader>s :Ack
 nmap <leader>r :CtrlPClearCache<CR>
 " Pretty json please!
 nmap <leader>j :%!python -m json.tool<CR>
-
+" Yep ignore these in the fuzzy finder ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " Taking notes are we? Code notes are excluded globally in git
 nmap <leader>tn :e notes.scratch.md<CR>
 
