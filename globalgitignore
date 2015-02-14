@@ -46,3 +46,7 @@ Thumbs.db
 ########
 *.scratch*
 tags
+
+# SCSS #
+########
+.sass-cache/
