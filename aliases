@@ -24,3 +24,7 @@ alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql"
 
 # ZSH Preventing Autocorrects
 alias plugin="nocorrect plugin"
+
+# CouchDB
+alias couchstart="couchdb -b"
+alias couchstop="couchdb -d"
