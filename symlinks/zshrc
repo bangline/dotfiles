@@ -17,6 +17,7 @@ plugins=(git bundler)
 # Todo.txt, the only todo list I find useful
 export EDITOR='vim'
 export ACKRC='~/.ackrc'
+export LC_ALL=en_GB.UTF-8
 
 source $HOME/.dotfiles/aliases
 source $HOME/.dotfiles/functions

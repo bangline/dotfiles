@@ -19,6 +19,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'nono/vim-handlebars'
 Plugin 'rizzatti/dash.vim'
 Plugin 'fatih/vim-go'
+Plugin 'bling/vim-airline'
+Plugin 'itchyny/lightline.vim'
+Bundle 'edkolev/tmuxline.vim'
 
 call vundle#end()
 
@@ -85,3 +88,8 @@ nmap <leader>tn :e notes.scratch.md<CR>
 
 " Strip trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+" airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:tmuxline_powerline_separators = 0
