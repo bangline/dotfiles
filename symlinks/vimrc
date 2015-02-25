@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'nono/vim-handlebars'
 Plugin 'rizzatti/dash.vim'
 Plugin 'fatih/vim-go'
+Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'itchyny/lightline.vim'
 Bundle 'edkolev/tmuxline.vim'
@@ -89,7 +90,17 @@ nmap <leader>tn :e notes.scratch.md<CR>
 " Strip trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-" airline
+" Airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
-let g:tmuxline_powerline_separators = 0
+let g:tmuxline_powerline_separators = 1
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
