@@ -5,11 +5,11 @@ alias gitconfig="vim ~/.gitconfig"
 
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
-alias dotfiles="vim ~/.dotfiles ."
+alias dotfiles="vim ~/.dotfiles"
 alias aliases="vim ~/.dotfiles/aliases"
 alias functions="vim ~/.dotfiles/functions"
 alias gitignore="vim ~/.dotfiles/globalgitignore"
-alias vim="vim -v"
+alias vim="/usr/local/bin/vim -v"
 alias vundle="vim +BundleInstall +qall"
 
 # Mail accounts
@@ -20,7 +20,7 @@ chpwd() {
   ls -lrthG
 }
 
-alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql"
+# alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql"
 
 # ZSH Preventing Autocorrects
 alias plugin="nocorrect plugin"
@@ -28,3 +28,4 @@ alias plugin="nocorrect plugin"
 # CouchDB
 alias couchstart="couchdb -b"
 alias couchstop="couchdb -d"
+alias code="cd ~/Code"

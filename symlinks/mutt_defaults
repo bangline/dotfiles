@@ -12,13 +12,21 @@ set quit
 
 # Index formatting
 set date_format   = "%d %b"
-set index_format  = "[%Z]  %D  %-20.20F  %s"
+set index_format  = "%2C [%Z]  %D  %-20.20F  %s"
 set sort          = threads
 
 # Index keys
 bind index R        group-reply
 bind index <tab>    sync-mailbox
 bind index <space>  collapse-thread
+
+# Pager
+set pager_index_lines = 10
+set pager_context = 3
+set pager_stop
+bind pager gg top
+bind pager G  bottom
+bind pager R  group-reply
 
 # Colours
 color hdrdefault black        cyan

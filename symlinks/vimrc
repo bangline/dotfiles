@@ -1,37 +1,27 @@
 set nocompatible               " Round here we say Vim, not Vi
 filetype off                   " required!
 
+set shell=/bin/bash
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 " Vundle
-Plugin 'gmarik/vundle'
-
+Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive'
 Plugin 'nono/vim-handlebars'
-Plugin 'rizzatti/dash.vim'
 Plugin 'fatih/vim-go'
-Plugin 'scrooloose/syntastic'
-Plugin 'bling/vim-airline'
-Plugin 'itchyny/lightline.vim'
-Bundle 'edkolev/tmuxline.vim'
-
 call vundle#end()
+filetype plugin indent on
 
 " ================
 " Ruby stuff
 " ================
 syntax on                 " Enable syntax highlighting
-filetype plugin indent on " Enable filetype-specific indenting and plugins
-
 augroup myfiletypes
   " Clear old autocmds in group
   autocmd!
@@ -66,7 +56,7 @@ set listchars+=precedes:<
 
 " format the current file
 nmap <leader>fef ggVG=``
-" Qucikly show navigation at the root
+" Quickly show navigation at the root
 nmap <leader>, :Explore<CR>
 nmap <leader>. :e.<CR>
 " Back to the last buffer
@@ -86,21 +76,16 @@ nmap <leader>j :%!python -m json.tool<CR>
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " Taking notes are we? Code notes are excluded globally in git
 nmap <leader>tn :e notes.scratch.md<CR>
+nmap <leader>v :Vex<CR>
+nmap <leader>s :Sex<CR>
 
 " Strip trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Airline
-set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:tmuxline_powerline_separators = 1
+let g:go_fmt_command = "goimports"
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" Use ag instead of grep
+set grepprg=ag\ --nogroup\ --nocolor
+let g:ackprg = 'ag --nogroup --column'
+" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
