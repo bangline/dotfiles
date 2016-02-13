@@ -7,23 +7,3 @@ function gvl() {
   branch = `get_branch_name`
   git hist origin/$branch..HEAD
 }
-
-function gop() {
-  cd "$GOPATH/src/github.com/bangline/$1"
-}
-
-function setnode() {
-  binpath=/usr/local/bin
-  nodepath=$binpath/node
-  npmpath=$binpath/npm
-  nvm use $1
-  node=$(which node)
-  npm=$(which npm)
-  if [ -f $nodepath ]; then
-    echo "Removing existing node & npm"
-    rm $nodepath $npmpath
-  fi
-  echo "Setting up symlinks in $binpath"
-  ln -s $node $nodepath
-  ln -s $npm $npmpath
-}

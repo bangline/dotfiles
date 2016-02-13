@@ -13,8 +13,16 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-fugitive'
 Plugin 'nono/vim-handlebars'
 Plugin 'fatih/vim-go'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/yajs.vim'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'junegunn/goyo.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'lambdatoast/elm.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -27,10 +35,17 @@ augroup myfiletypes
   autocmd!
   " autoindent with two spaces, always expand tabs
   autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
+  autocmd FileType c setl sw=2 sts=2 noexpandtab
 augroup END
 " ================
 
+set t_Co=256   " This is may or may not needed.
+
+set background=dark
+colorscheme PaperColor
+
 let mapleader = ","
+let g:jsx_ext_required = 0
 " Basic config that I cannot live without
 set list
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode

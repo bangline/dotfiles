@@ -50,3 +50,4 @@ tags
 # SCSS #
 ########
 .sass-cache/
+.byebug_history
