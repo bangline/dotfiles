@@ -12,7 +12,7 @@ HISTSIZE=20000
 HISTFILE=~/.zsh_history
 SAVEHIST=20000
 
-plugins=(git bundler)
+plugins=(bundler)
 
 # Todo.txt, the only todo list I find useful
 export EDITOR='vim'
@@ -22,10 +22,13 @@ export LC_ALL=en_GB.UTF-8
 source $HOME/.dotfiles/aliases
 source $HOME/.dotfiles/functions
 source $HOME/.dotfiles/paths
+source $HOME/.dotfiles/chruby-version
 source $ZSH/oh-my-zsh.sh
 
-export NVM_DIR="/Users/dave/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+source $HOME/.dotfiles/devkit

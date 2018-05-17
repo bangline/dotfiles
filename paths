@@ -1,13 +1,6 @@
-export GOPATH="$HOME/Code/golang"
-
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/usr/sbin:/sbin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
-export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
-export PATH="$GOPATH/bin:$PATH"
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$HOME/Desktop/mac_build/gcc-arm-none-eabi-4_9-2015q2/bin
 
-eval "$(rbenv init -)"
-source ~/.nvm/nvm.sh
+source "$(brew --prefix chruby)/share/chruby/chruby.sh"
+source "$(brew --prefix chruby)/share/chruby/auto.sh"

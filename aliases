@@ -1,33 +1,25 @@
 # Utility aliases
+alias vim="vim"
+alias vi="vim"
+alias vscode="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
 alias gitconfig="vim ~/.gitconfig"
-
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-
 alias dotfiles="vim ~/.dotfiles"
 alias aliases="vim ~/.dotfiles/aliases"
 alias functions="vim ~/.dotfiles/functions"
 alias gitignore="vim ~/.dotfiles/globalgitignore"
-alias vim="/usr/local/bin/vim -v"
-alias vundle="vim +BundleInstall +qall"
-
-# Mail accounts
-alias 1pc="mutt -F ~/.work_muttrc"
-alias bangline="mutt -F ~/.bangline_muttrc"
+alias vundle="vim +PluginInstall +qall"
+alias rv="vim ~/.dotfiles/chruby-version"
 
 chpwd() {
   ls -lrthG
 }
 
-# alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql"
-
 # ZSH Preventing Autocorrects
 alias plugin="nocorrect plugin"
 
-# CouchDB
-alias couchstart="couchdb -b"
-alias couchstop="couchdb -d"
 alias code="cd ~/Code"
-alias gocode="cd ~/Code/golang/src/github.com/bangline"
-alias 1pcgo="cd ~/Code/golang/src/github.com/1partcarbon"
+
+alias fa="vscode ~/Code/freeagent"

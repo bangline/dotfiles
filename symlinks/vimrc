@@ -4,8 +4,10 @@ filetype off                   " required!
 set shell=/bin/bash
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
 " Vundle
-Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'ervandew/supertab'
@@ -14,15 +16,12 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive'
-Plugin 'nono/vim-handlebars'
-Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/yajs.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'junegunn/goyo.vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'lambdatoast/elm.vim'
 call vundle#end()
 filetype plugin indent on
 
