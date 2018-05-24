@@ -21,5 +21,7 @@ chpwd() {
 alias plugin="nocorrect plugin"
 
 alias code="cd ~/Code"
+alias fa="cd ~/Code/freeagent && vscode ."
 
-alias fa="vscode ~/Code/freeagent"
+# Git helpers that aint config appropriate
+alias gclean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
