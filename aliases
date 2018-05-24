@@ -25,3 +25,6 @@ alias fa="cd ~/Code/freeagent && vscode ."
 
 # Git helpers that aint config appropriate
 alias gclean="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
+
+# Helpers for rails
+alias notes="rake notes:custom ANNOTATION=MY_TODO"
